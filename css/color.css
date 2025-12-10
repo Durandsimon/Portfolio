@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* === Mise en page général === */
+
+.Bleu-noir {
+  color: #000129;
+}
+
+.jaune {
+  color: #FFF372;
+}
+
+.jaune-hover {
+  color: #FFCC57;
+}
+
+.blanc {
+  color: #ffffff;
+}

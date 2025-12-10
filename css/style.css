@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* === Mise en page général === */
+html {
+  font-family: "jost";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bleu-noir: #000129;
+  --jaune: #FFF372;
+  --blanc: #ffffff;
+  --jaune-hover: #FFCC57;
+}
+
+
+/* VARIABLES */
+.padding-section{
+  padding: 20px 160px 20px 160px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.gap10{
+  gap: 10px;
+}
+
+.gap40{
+  gap: 40px;
+}
+
+.marg-bot-10{
+  margin-bottom: 10px;
+}
+
+.w50{
+  width: 50%;
+}
+
+.w33{
+  width: 33.33%;
+}
+
+.w25{
+  width: 25%;
+}
+
+.w66{
+  width: 66.66%;
+}
+
+.w75{
+  width: 75%;
+}
+
+.w100{
+  width: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+video{
+  width: 100%;
+}
+
+/* SECTIONS */
+.menu{
+  background-color: var(--bleu-noir);
+  color: var(--blanc);
+  display: flex;
+}
+
+.box-menu{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer{
+  background-color: var(--bleu-noir);
+  color: var(--blanc);
+  display: flex;
+}
+
+.box-footer{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section{
+  background-color: var(--jaune);
+  border-bottom: solid 1px var(--bleu-noir);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.second-section{
+  background-color: var(--blanc);
+  border-bottom: solid 1px var(--bleu-noir);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* Boutons */
+
+.bouton-primaire{
+  background-color: var(--jaune);
+  border: var(--bleu-noir) solid 1px;
+  padding: 5px 10px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.bouton-primaire:hover{
+  background-color: var(--jaune-hover);
+}
+
+.bouton-secondaire{
+  background-color: var(--blanc);
+  border: var(--bleu-noir) solid 1px;
+  padding: 5px 10px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+.bouton-secondaire:hover{
+  background-color: #e8e8e8;
+}
+
+
+/*   */
+
+
+.pointillé{
+  flex: 1;
+  border-bottom: var(--bleu-noir) 2px dotted;
+  width: max-content;
+}
+
+.formation{
+  border: var(--bleu-noir) 1px solid;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.vitrine{
+  border: var(--bleu-noir) solid 1px;
+}
+
+
+.hidden{
+  display: none;
+}
+

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* === Mise en page général === */
+
+:root {
+  --bleu-noir: #000129;
+  --jaune: #FFF372;
+  --blanc: #ffffff;
+  --jaune-hover: #FFCC57;
+}
+
+H1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--bleu-noir);
+}
+
+H2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 0 0;
+  color: var(--bleu-noir);
+}
+
+H3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--bleu-noir);
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--bleu-noir);
+}
+
+H5{
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+  color: var(--bleu-noir);
+}
+
+p{
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  color: var(--bleu-noir);
+}
+
+a{
+  color: var(--blanc);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+
+a:hover{ 
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
