@@ -19,7 +19,7 @@ body {
 
 /* VARIABLES */
 .padding-section{
-  padding: 20px 160px 20px 160px;
+  padding: 1.25em 10em 1.25em 10em;
 }
 
 .flex{
@@ -34,20 +34,28 @@ body {
   justify-content: space-between;
 }
 
+.justify-content-flex-end{
+justify-content: flex-end;
+}
+
+.justify-content-center{
+justify-content: center;
+}
+
 .align-items-center{
   align-items: center;
 }
 
 .gap10{
-  gap: 10px;
+  gap: 0.625em;
 }
 
 .gap40{
-  gap: 40px;
+  gap: 2.5em;
 }
 
 .marg-bot-10{
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 .w50{
@@ -56,6 +64,18 @@ body {
 
 .w33{
   width: 33.33%;
+}
+
+.w10{
+  width: 10%;
+}
+
+.w20{
+  width: 20%;
+}
+
+.w70{
+  width: 70%;
 }
 
 .w25{
@@ -72,6 +92,10 @@ body {
 
 .w100{
   width: 100%;
+}
+
+.h100{
+  height: 100%;
 }
 
 img{
@@ -93,7 +117,7 @@ video{
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  gap: 30px;
+  gap: 1.875em;
   align-items: center;
   a {
     display: flex;
@@ -115,17 +139,67 @@ video{
 
 .first-section{
   background-color: var(--jaune);
+  background: linear-gradient(135deg, var(--jaune) 0%, var(--jaune-hover) 100%);
   border-bottom: solid 1px var(--bleu-noir);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
 }
 
 .second-section{
   background-color: var(--blanc);
   border-bottom: solid 1px var(--bleu-noir);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.75em;
+  padding-bottom: 3.75em;
 }
+
+/* -- Bloc page d'accueil -- */
+
+.bloc-theme{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+  padding: 10vh;
+  border-bottom: solid 1px var(--bleu-noir);
+  transition-duration: 300ms;
+  background-color: #00012950;
+
+}
+
+.fond-image-bloc{
+  background-size: cover;
+}
+
+.bloc-theme>div>.underligne{
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  width: fit-content;
+  color: var(--bleu-noir);
+  transition-duration: 300ms;
+  background-color: var(--jaune);
+}
+
+.bloc-theme:hover>div>.underligne{
+  text-decoration: underline;
+}
+
+
+.bloc-theme:hover{
+  background-color: #00012900;
+}
+
+.bloc-2{
+  border: solid 1px var(--bleu-noir);
+  border-top: 0px;
+}
+
+.bloc-3{
+  background-color: var(--jaune);
+  height: 25vh;
+  padding: 10vh;
+  border-bottom: solid 1px var(--bleu-noir);
+}
+
+
 
 
 /* Boutons */
@@ -133,7 +207,7 @@ video{
 .bouton-primaire{
   background-color: var(--jaune);
   border: var(--bleu-noir) solid 1px;
-  padding: 5px 10px;
+  padding: 0.313em 0.625em;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
@@ -147,7 +221,7 @@ video{
 .bouton-secondaire{
   background-color: var(--blanc);
   border: var(--bleu-noir) solid 1px;
-  padding: 5px 10px;
+  padding: 0.313em 0.625em;
   width: fit-content;
   height: fit-content;
   cursor: pointer;
@@ -170,8 +244,10 @@ video{
 
 .formation{
   border: var(--bleu-noir) 1px solid;
-  padding: 5px 10px;
-  border-radius: 20px;
+  background-color: var(--blanc);
+  padding: 0.313em 0.625em;
+  border-radius: 1.25em;
+  height: fit-content;
 }
 
 .vitrine{
