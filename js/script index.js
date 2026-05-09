@@ -1,4 +1,6 @@
 
+document.querySelector('#menu1').style.display = 'none';
+
 document.querySelector("#Bouton-menu").addEventListener("click", menu);
     
 function menu(){
