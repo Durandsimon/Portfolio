@@ -325,6 +325,7 @@ video{
 
 .footer {
   flex-direction: column;
+  padding-bottom: 2em;
 }
 
 .first-section>div>p{
